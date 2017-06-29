@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<div class="choose-team all-blocks" ng-controller="teamsCtrl" id="choose-team">
+			<h1>My Teams</h1>
+			<div class="my-chosen-teams" id="shteams" >
+				<img src="Images/noteam.png" class="no-team-img" id="no-team-img" />
+                               <div ng-repeat="team in ourTeam" >
+                                <a class="team-choice hideTeams" ng-click="ridTeam(team)" ng-attr-id="{{ 'owned-' + team }}"><img src="Images/minues-50.png" /> {{ team }}</a>
+                               </div>
+			</div>
+			<h1>Choose Your Team</h1>
+			<div class="display-team" ng-repeat="team in teams">
+			 	
+			 		<a class="team-choice" ng-click="ownTeam(team.Name)"  ng-attr-id="{{ team.Name }}">
+			 		<img src="Images/Plus-80.png"/>
+			 		{{ team.Name }}
+			 	</a>
+			</div>
+		</div>
+</body>
+</html>

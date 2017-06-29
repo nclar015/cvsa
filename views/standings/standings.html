@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="schedule-block" ng-controller="standingsCtrl">
+
+        <h3>Spring 2017</h3>
+
+
+        <table>
+            <h4 class="tableName">Division 1</h4>
+            <tr>
+                <th>Pos</th>
+                <th style="text-align: left; width: 90px;">Team</th>
+                <th>GP</th>
+                <th>W</th>
+                <th>L</th>
+                <th>T</th>
+                <th>+/-</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr ng-repeat="stand in d1">
+                <td>{{ $index + 1}}</td>
+                <td style="text-align: left;">{{ stand.Team }}</td>
+                <td>{{ stand.GP }}</td>
+                <td>{{ stand.W }}</td>
+                <td>{{ stand.L }}</td>
+                <td>{{ stand.T }}</td>
+                <td>{{ stand.GF }}-{{ stand.GA }}</td>
+                <td>{{ stand.GD }}</td>
+                <td>{{ stand.Pts}}</td>
+            </tr>
+        </table>
+        <table>
+            <h4 class="tableName">Division 2</h4>
+            <tr>
+                <th>Pos</th>
+                <th style="text-align: left; width: 90px;">Team</th>
+                <th>GP</th>
+                <th>W</th>
+                <th>L</th>
+                <th>T</th>
+                <th>+/-</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr ng-repeat="stand in d2">
+                <td>{{ $index + 1}}</td>
+                <td style="text-align: left;">{{ stand.Team }}</td>
+                <td>{{ stand.GP }}</td>
+                <td>{{ stand.W }}</td>
+                <td>{{ stand.L }}</td>
+                <td>{{ stand.T }}</td>
+                <td>{{ stand.GF }}-{{ stand.GA }}</td>
+                <td>{{ stand.GD }}</td>
+                <td>{{ stand.Pts}}</td>
+            </tr>
+        </table>
+        <table>
+            <h4 class="tableName">Division 3</h4>
+            <tr>
+                <th>Pos</th>
+                <th style="text-align: left; width: 90px;">Team</th>
+                <th>GP</th>
+                <th>W</th>
+                <th>L</th>
+                <th>T</th>
+                <th>+/-</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr ng-repeat="stand in d3">
+                <td>{{ $index + 1}}</td>
+                <td style="text-align: left;">{{ stand.Team }}</td>
+                <td>{{ stand.GP }}</td>
+                <td>{{ stand.W }}</td>
+                <td>{{ stand.L }}</td>
+                <td>{{ stand.T }}</td>
+                <td>{{ stand.GF }}-{{ stand.GA }}</td>
+                <td>{{ stand.GD }}</td>
+                <td>{{ stand.Pts}}</td>
+            </tr>
+        </table>
+        <table>
+            <h4 class="tableName">Division 4</h4>
+            <tr>
+                <th>Pos</th>
+                <th style="text-align: left; width: 90px;">Team</th>
+                <th>GP</th>
+                <th>W</th>
+                <th>L</th>
+                <th>T</th>
+                <th>+/-</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr ng-repeat="stand in d4">
+                <td>{{ $index + 1}}</td>
+                <td style="text-align: left;">{{ stand.Team }}</td>
+                <td>{{ stand.GP }}</td>
+                <td>{{ stand.W }}</td>
+                <td>{{ stand.L }}</td>
+                <td>{{ stand.T }}</td>
+                <td>{{ stand.GF }}-{{ stand.GA }}</td>
+                <td>{{ stand.GD }}</td>
+                <td>{{ stand.Pts}}</td>
+            </tr>
+        </table>
+        <table>
+            <h4 class="tableName">Division 5</h4>
+            <tr>
+                <th>Pos</th>
+                <th style="text-align: left; width: 90px;">Team</th>
+                <th>GP</th>
+                <th>W</th>
+                <th>L</th>
+                <th>T</th>
+                <th>+/-</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr ng-repeat="stand in d5">
+                <td>{{ $index + 1}}</td>
+                <td style="text-align: left;">{{ stand.Team }}</td>
+                <td>{{ stand.GP }}</td>
+                <td>{{ stand.W }}</td>
+                <td>{{ stand.L }}</td>
+                <td>{{ stand.T }}</td>
+                <td>{{ stand.GF }}-{{ stand.GA }}</td>
+                <td>{{ stand.GD }}</td>
+                <td>{{ stand.Pts}}</td>
+            </tr>
+        </table>
+        <table>
+            <h4 class="tableName">Division 6</h4>
+            <tr>
+                <th>Pos</th>
+                <th style="text-align: left; width: 90px;">Team</th>
+                <th>GP</th>
+                <th>W</th>
+                <th>L</th>
+                <th>T</th>
+                <th>+/-</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr ng-repeat="stand in d6">
+                <td>{{ $index + 1}}</td>
+                <td style="text-align: left;">{{ stand.Team }}</td>
+                <td>{{ stand.GP }}</td>
+                <td>{{ stand.W }}</td>
+                <td>{{ stand.L }}</td>
+                <td>{{ stand.T }}</td>
+                <td>{{ stand.GF }}-{{ stand.GA }}</td>
+                <td>{{ stand.GD }}</td>
+                <td>{{ stand.Pts}}</td>
+            </tr>
+        </table>
+        <table>
+            <h4 class="tableName">Division 7</h4>
+            <tr>
+                <th>Pos</th>
+                <th style="text-align: left; width: 90px;">Team</th>
+                <th>GP</th>
+                <th>W</th>
+                <th>L</th>
+                <th>T</th>
+                <th>+/-</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr ng-repeat="stand in d7">
+                <td>{{ $index + 1}}</td>
+                <td style="text-align: left;">{{ stand.Team }}</td>
+                <td>{{ stand.GP }}</td>
+                <td>{{ stand.W }}</td>
+                <td>{{ stand.L }}</td>
+                <td>{{ stand.T }}</td>
+                <td>{{ stand.GF }}-{{ stand.GA }}</td>
+                <td>{{ stand.GD }}</td>
+                <td>{{ stand.Pts}}</td>
+            </tr>
+        </table>
+        <table>
+            <h4 class="tableName">Division 8</h4>
+            <tr>
+                <th>Pos</th>
+                <th style="text-align: left; width: 90px;">Team</th>
+                <th>GP</th>
+                <th>W</th>
+                <th>L</th>
+                <th>T</th>
+                <th>+/-</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr ng-repeat="stand in d8">
+                <td>{{ $index + 1}}</td>
+                <td style="text-align: left;">{{ stand.Team }}</td>
+                <td>{{ stand.GP }}</td>
+                <td>{{ stand.W }}</td>
+                <td>{{ stand.L }}</td>
+                <td>{{ stand.T }}</td>
+                <td>{{ stand.GF }}-{{ stand.GA }}</td>
+                <td>{{ stand.GD }}</td>
+                <td>{{ stand.Pts}}</td>
+            </tr>
+        </table>
+        <table>
+            <h4 class="tableName">Coed Competitive</h4>
+            <tr>
+                <th>Pos</th>
+                <th style="text-align: left; width: 90px;">Team</th>
+                <th>GP</th>
+                <th>W</th>
+                <th>L</th>
+                <th>T</th>
+                <th>+/-</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr ng-repeat="stand in d9">
+                <td>{{ $index + 1}}</td>
+                <td style="text-align: left;">{{ stand.Team }}</td>
+                <td>{{ stand.GP }}</td>
+                <td>{{ stand.W }}</td>
+                <td>{{ stand.L }}</td>
+                <td>{{ stand.T }}</td>
+                <td>{{ stand.GF }}-{{ stand.GA }}</td>
+                <td>{{ stand.GD }}</td>
+                <td>{{ stand.Pts}}</td>
+            </tr>
+        </table>
+        <table>
+            <h4 class="tableName">Coed Recreational</h4>
+            <tr>
+                <th>Pos</th>
+                <th style="text-align: left; width: 90px;">Team</th>
+                <th>GP</th>
+                <th>W</th>
+                <th>L</th>
+                <th>T</th>
+                <th>+/-</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr ng-repeat="stand in d10">
+                <td>{{ $index + 1}}</td>
+                <td style="text-align: left;">{{ stand.Team }}</td>
+                <td>{{ stand.GP }}</td>
+                <td>{{ stand.W }}</td>
+                <td>{{ stand.L }}</td>
+                <td>{{ stand.T }}</td>
+                <td>{{ stand.GF }}-{{ stand.GA }}</td>
+                <td>{{ stand.GD }}</td>
+                <td>{{ stand.Pts}}</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>

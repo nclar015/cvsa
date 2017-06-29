@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<body style="margin:0;">
+    <div class="match-container" ng-controller="matchCtrl">
+        <div class="match-header">
+            <div class="first-match">
+                <div class="teamShow">
+                    <img src="Images/Soccer Ball-80.png" />
+                </div>
+                <div class="teamName">
+                    <h3>{{ homeTeam }}</h3>
+                    <h3>vs. {{ awayTeam }}</h3>
+                </div>
+            </div>
+            <div class="second-match">
+                <div class="teamShow">
+                    <img src="Images/Whistle-100.png" />
+                </div>
+                <div class="teamName">
+                    <h3>{{ time | date: 'shortTime' }}</h3>
+                    <h3>{{ date | date: 'EEEE MMM, d' }}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="match-body">
+            <div class="third-match">
+                <a href="http://maps.google.com/?q={{ pickField(field) }}" target="_blank">
+                    <div class="teamShow">
+                        <img src="Images/icons8-Google Maps-128.png" />
+                    </div>
+                    <div class="teamName">
+                        <h3>{{ pickField(field) }}</h3>
+                        <span><img src="Images/Forward-96.png"/></span>
+
+                    </div>
+                </a>
+            </div>
+            <div class="third-match">
+                <a href="" target="_blank" ng-click="findFieldClick =! findFieldClick">
+                    <div class="teamShow">
+                        <img src="Images/Soccer Corner-80.png" />
+                    </div>
+                    <div class="teamName">
+                        <h3>Field: {{ findField(field) }}</h3>
+                        <span><img src="Images/Forward-96.png" style="transform: rotate(90deg); margin-right: 5px;"/></span>
+
+                    </div>
+                </a>
+            </div>
+            <div class="fieldMap" ng-show="findFieldClick">
+                <img ng-src="{{ fieldImage(field) }}" />
+            </div>
+            <div class="third-match">
+                <a href="/#/schedule">
+                    <div class="teamShow">
+                        <img src="Images/Soccer-96.png" />
+                    </div>
+                    <div class="teamName">
+                        <h3>See Your Full Schedule</h3>
+                        <span><img src="Images/Forward-96.png"/></span>
+                    </div>
+                </a>
+
+            </div>
+            <div class="third-match">
+                <a href="/#/standings">
+                    <div class="teamShow">
+                        <img src="Images/World Cup-80.png" />
+                    </div>
+                    <div class="teamName">
+                        <h3>See Your Standings</h3>
+                        <span><img src="Images/Forward-96.png"/></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

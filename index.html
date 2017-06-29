@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Page Info -->
+    <title>Central Virginia Soccer Association</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <!-- Angular/Bootstrap/Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://cvsa.azzida.com/js/teams.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+
+</head>
+
+<div class="navbar">
+    <div class="left-icon-menu">
+        <a id="menu">
+            <img src="Images/Menu-96.png" />
+        </a>
+    </div>
+    <div class="center-name">
+        <a href="/#/main">CVSA</a>
+    </div>
+    <div class="right-menu">
+        <div class="search-right">
+            <a href="#teams" id="filter">
+                <img src="Images/Filter-100.png" />
+            </a>
+        </div>
+    </div>
+</div>
+<a class="topdone" onclick="history.go(-1);return false;">
+                   Back
+                 </a>
+<div class="background">
+</div>
+<div class="nav-menu">
+    <button class="close-menu">Close Menu</button>
+    <ul>
+        <li>
+            <a href="/#/schedule">
+						Schedule
+					</a>
+        </li>
+        <li>
+            <a href="/#/standings">
+						Standings
+					</a>
+        </li>
+        <!--Extended Menu Saved For Expansion of App-->
+        <!--
+				<li>
+					<a href="http://cvsasoccer.net/Cup.aspx" target="_blank">
+						CVSA Cup
+					</a>
+				</li>
+				<li>
+					<a href="http://cvsasoccer.net/Discipline.aspx" target="_blank">
+						Disciplinary Page
+					</a>
+				</li>
+				<li>
+					<a href="http://cvsasoccer.net/Players.aspx" target="_blank">
+						Available Players
+					</a>
+				</li>
+				<li>
+					<a href="http://cvsasoccer.net/Calendar.aspx" target="_blank">
+						Calendar
+					</a>
+				</li>
+				<li>
+					<a href="http://cvsasoccer.net/fields.aspx" target="_blank">
+						Fields
+					</a>
+				</li>
+				<li>
+					<a href="http://cvsasoccer.net/Treasurer.aspx" target="_blank">
+					Treasures Page
+					</a>
+				</li>
+				<li>
+					<a href="http://cvsasoccer.net/constitution.aspx" target="_blank">
+						Rules - Bylaws
+					</a>
+				</li>
+				<li>
+					<a href="http://www.cvsra.com/" target="_blank">
+						CVSRA
+					</a>
+				</li>
+				<li>
+					<a href="http://www.mdcvsasoccer.org/Default.aspx?tabid=784397" target="_blank">
+						Insurance Claims
+					</a>
+				</li>
+				<li>
+					<a href="http://cvsasoccer.net/" target="_blank">
+						Contact Info
+					</a>
+				</li>
+				<li>
+					<a href="http://cvsasoccer.net/" target="_blank">
+						Team Links
+					</a>
+				</li>
+-->
+    </ul>
+</div>
+
+<script src="app.js"></script>
+
+<body ng-app="myApp" id="app-body">
+
+    <ng-view></ng-view>
+
+</body>
+
+
+</html>

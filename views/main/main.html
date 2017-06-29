@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<div class="appBody">
+    <div id="grey-cover">
+    </div>
+    <div ng-hide="chooseTeam">
+        <a href="/#/teams" id="chooseTeam">Choose Your Team</a>
+    </div>
+    <div ng-controller="mainCtrl" ng-repeat="gam in myMatches | limitTo: 1">
+        <div class="first-section">
+            <div class="wide-card all-blocks home-blocks" ng-click="matchDay(gam.Date,gam.Home_Team,gam.Away_Team,gam.Time,gam.Field);">
+                <div class="card-left">
+                    <a>
+                        <img ng-src="{{ pickBack(gam.Field) }}" />
+                        <p>{{ gam.Field }}</p>
+                    </a>
+                </div>
+                <div class="card-middle-content">
+                    <h2>Next Match</h2>
+                    <h3>{{ gam.Home_Team }} vs {{ gam.Away_Team }}</h3>
+                    <h3>{{ gam.Date | date : "fullDate" }}</h3>
+                    <h3>{{ gam.Time | date: 'shortTime' }}</h3>
+                    <span class="nextArrow"><img src="Images/Forward-96.png"/></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="half-card all-blocks home-blocks" ng-if="hasTeam.length > 0">
+        <a ng-href="/#/schedule" target="_self">
+            <img src="Images/Soccer Corner-80.png" />
+            <h2>Schedule</h2>
+        </a>
+    </div>
+    <div class="half-card all-blocks home-blocks" ng-if="hasTeam.length > 0">
+        <a href="/#/standings">
+            <img src="Images/World Cup-80.png" />
+            <h2>Standings</h2>
+        </a>
+    </div>
+
+</div>
+
+</html>

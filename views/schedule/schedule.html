@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="schedule-block" ng-controller="mainCtrl">
+
+        <h3>{{ findSeason() }}</h3>
+
+        <div class="twoChoice">
+            <button class="firstChoice" id="fullSchedule" ng-click="showFull = true; showUpcoming = false; fullBackground();">Scores</button>
+            <button class="secondChoice" id="upcomingSchedule" ng-click="showFull = false; showUpcoming = true; upcomingBackground();">Upcoming</button>
+        </div>
+
+        <div class="allMatchesBlock" ng-show="showFull">
+            <div class="fieldSort" ng-repeat="game in pastMatches | orderBy: 'Date'" ng-click="matchDay(game.Date,game.Home_Team,game.Away_Team,game.Time,game.Field);">
+                <p class="fieldName">{{ game.Date| date : "fullDate" }}</p>
+                <div class="gameSort">
+                    <p class="gameHomeTeam">{{ game.Home_Team }}</p>
+                    <p class="gameAwayTeam">{{ game.Away_Team }}</p>
+                    <span class="scores" ng-if="game.Field != 'BYE'">
+						<p>2</p>
+						<p>3</p>
+					</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="matchesBlock" ng-show="showUpcoming" ng-init="showUpcoming = true;">
+            <div class="fieldSort" ng-repeat="gam in myMatches | orderBy: 'Date'" ng-click="matchDay(gam.Date,gam.Home_Team,gam.Away_Team,gam.Time,gam.Field);">
+                <p class="fieldName">{{ gam.Date| date : "fullDate" }} - {{ gam.Time | date: 'shortTime' }}</p>
+                <div class="gameSort">
+                    <p class="gameHomeTeam">{{ gam.Home_Team }} vs. {{ gam.Away_Team }}</p>
+                    <p class="gameAwayTeam">{{ gam.Field }}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
