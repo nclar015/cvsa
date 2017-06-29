@@ -4,23 +4,23 @@ app.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider
             .when("/teams", {
-                templateUrl: "views/teamChoice/team.html",
+                templateUrl: "views/team.html",
                 controller: "teamsCtrl"
             })
             .when("/standings", {
-                templateUrl: "views/standings/standings.html",
+                templateUrl: "views/standings.html",
                 controller: "standingsCtrl"
             })
             .when("/match", {
-                templateUrl: "views/match/match.html",
+                templateUrl: "views/match.html",
                 controller: "matchCtrl"
             })
             .when("/schedule", {
-                templateUrl: "views/schedule/schedule.html",
+                templateUrl: "views/schedule.html",
                 controller: "mainCtrl"
             })
             .otherwise({
-                templateUrl: "views/main/main.html",
+                templateUrl: "views/main.html",
                 controller: "mainCtrl"
             });
     }
