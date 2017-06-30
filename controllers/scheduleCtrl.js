@@ -1,4 +1,4 @@
-app.controller('mainCtrl', function($scope, $http) {
+app.controller('scheduleCtrl', function($scope, $http) {
     $http.get("http://cvsa.azzida.com/games.php")
         .then(function(gameresponse) {
             $("#grey-cover").fadeOut(800);
@@ -50,7 +50,6 @@ app.controller('mainCtrl', function($scope, $http) {
             }
 
         });
-
     $scope.findSeason = function() {
         var d = new Date();
         var thisMonth = d.getMonth();
@@ -61,6 +60,7 @@ app.controller('mainCtrl', function($scope, $http) {
         var thisSeason = thisSeason + " " + thisYear;
         return thisSeason;
     }
+
     var showFull = false;
     var showUpcoming = true;
 
@@ -141,4 +141,5 @@ app.controller('mainCtrl', function($scope, $http) {
                 return "Images/doreypark.png";
         }
     };
+
 });

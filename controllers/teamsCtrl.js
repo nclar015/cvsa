@@ -4,7 +4,6 @@ angular.module('myApp').controller('teamsCtrl', function($scope, $window, $http)
             $scope.teams = response.data.data;
         });
 
-    $(".topdone").fadeIn();
     $scope.ourTeam = [];
 
     //localStorage.yourTeams = "";

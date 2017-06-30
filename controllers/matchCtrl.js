@@ -1,5 +1,5 @@
 angular.module('myApp').controller('matchCtrl', function($scope) {
-    $(".topdone").fadeIn();
+
     $scope.homeTeam = localStorage.matchHome;
     $scope.awayTeam = localStorage.matchAway;
     $scope.date = new Date(localStorage.matchDate);

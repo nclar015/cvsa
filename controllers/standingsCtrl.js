@@ -43,5 +43,4 @@ angular.module('myApp').controller('standingsCtrl', function($scope, $window, $h
             }
         });
 
-
 });

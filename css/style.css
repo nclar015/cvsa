@@ -139,12 +139,12 @@ td {
 }
 
 .left-icon-menu {
-    display: inline-block;
     vertical-align: top;
     margin: 0;
     padding: 0;
-    float: left;
+    width: 40px;
     text-align: left;
+    float: left;
 }
 
 .left-icon-menu img {
@@ -384,9 +384,10 @@ a.team-choice {
 }
 
 .topdone img {
-    height: 40px;
-    margin: 10px auto;
-    display: block;
+    height: 30px;
+    margin: 15px auto;
+    padding: 0 10px;
+    display: none;
 }
 
 .topdone {
@@ -395,13 +396,9 @@ a.team-choice {
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-    line-height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9;
-    display: none;
+    float: left;
+    width: 40px;
+    margin: 0;
 }
 
 .my-chosen-teams {

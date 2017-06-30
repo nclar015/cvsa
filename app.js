@@ -17,7 +17,7 @@ app.config(['$routeProvider',
             })
             .when("/schedule", {
                 templateUrl: "views/schedule.html",
-                controller: "mainCtrl"
+                controller: "scheduleCtrl"
             })
             .otherwise({
                 templateUrl: "views/main.html",
